@@ -1,7 +1,6 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hospital_app/screens/register/view/widget/dotted_divider.dart';
 import 'package:hospital_app/screens/widgets/custom_appbar.dart';
 import 'package:pdf/pdf.dart';
