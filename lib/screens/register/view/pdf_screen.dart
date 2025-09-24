@@ -165,7 +165,7 @@ Future<Uint8List> generatePatientPdf(
                   child: pw.Opacity(
                     opacity: .1,
 
-                    child: pw.Image(watermarkImage, width: 400, height: 400),
+                    child: pw.Image(watermarkImage, width: 360, height: 360),
                   ),
                 ),
               ),
@@ -306,7 +306,7 @@ Future<Uint8List> generatePatientPdf(
                       ),
                     ],
                   ),
-                  _vSpace(20),
+                  _vSpace(10),
                   DottedDivider(),
 
                   pw.Table.fromTextArray(
@@ -347,7 +347,7 @@ Future<Uint8List> generatePatientPdf(
                     }).toList(),
                   ),
                   pw.Center(child: DottedDivider()),
-                  _vSpace(20),
+                  _vSpace(15),
 
                   pw.Align(
                     alignment: pw.Alignment.centerRight,
@@ -379,7 +379,7 @@ Future<Uint8List> generatePatientPdf(
                           mainAxisSize: pw.MainAxisSize.min,
                           children: [
                             pw.Text('Advance', style: normalTextStyle),
-                            _hSpace(20),
+                            _hSpace(10),
                             pw.Text(
                               '₹${advanceAmount}',
                               style: normalTextStyle,
@@ -406,7 +406,7 @@ Future<Uint8List> generatePatientPdf(
                       ],
                     ),
                   ),
-                  _vSpace(40),
+                  _vSpace(20),
                   pw.Align(
                     alignment: pw.Alignment.centerRight,
                     child: pw.Column(
